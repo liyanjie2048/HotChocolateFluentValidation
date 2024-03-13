@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0;netstandard2.1;net6;net7;net8;</TargetFrameworks>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Description>HotChocolate FluentValidation</Description>
+		<VersionPrefix>1.0.0</VersionPrefix>
+		<VersionSuffix>20240313</VersionSuffix>
+		<Copyright>© Liyanjie.net</Copyright>
+		<Authors>liyanjie2048@outlook.com</Authors>
+		<Company>Liyanjie.net</Company>
+		<RepositoryType>Git</RepositoryType>
+		<RepositoryUrl>https://github.com/liyanjie2048/HotChocolateFluentValidation</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/liyanjie2048/HotChocolateFluentValidation</PackageProjectUrl>
+		<PackageIcon>liyanjie.net.256.png</PackageIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\liyanjie.net.256.png">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="FluentValidation" />
+		<PackageReference Include="HotChocolate.Execution" />
+	</ItemGroup>
+
+	<Target Name="MovePackage" AfterTargets="Pack">
+		<Move SourceFiles="$(OutputPath)$(PackageId).$(PackageVersion).nupkg" DestinationFolder="$(SolutionPath)\..\dist" />
+	</Target>
+
+</Project>

@@ -1,0 +1,9 @@
+<Project>
+	<PropertyGroup>
+		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageVersion Include="FluentValidation" Version="11.9.0" />
+		<PackageVersion Include="HotChocolate.Execution" Version="13.9.0" />
+	</ItemGroup>
+</Project>
