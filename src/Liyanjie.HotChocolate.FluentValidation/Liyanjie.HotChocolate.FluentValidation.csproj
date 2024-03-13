@@ -6,7 +6,7 @@
 		<Nullable>enable</Nullable>
 		<Description>HotChocolate FluentValidation</Description>
 		<VersionPrefix>1.0.0</VersionPrefix>
-		<VersionSuffix>20240313</VersionSuffix>
+		<VersionSuffix>240313</VersionSuffix>
 		<Copyright>© Liyanjie.net</Copyright>
 		<Authors>liyanjie2048@outlook.com</Authors>
 		<Company>Liyanjie.net</Company>
